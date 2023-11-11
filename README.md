@@ -11,7 +11,9 @@ Steps
 2. Run `docker compose up -d`.
 3. Voila!
 
-Endpoints
----------
-Node.js: `http://localhost/core/`
-Golang: `http://localhost/ag/ping`
+Summary
+-------
+| Framework | Endpoint                   |
+|-----------|----------------------------|
+| Bun       | `http://localhost/core/`   |
+| Golang    | `http://localhost/ag/ping` |
