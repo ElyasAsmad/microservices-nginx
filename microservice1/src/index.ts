@@ -4,7 +4,7 @@ const app = new Elysia()
 
 app.get("/", async (c) => {
 
-  await new Promise(r => setTimeout(r, 1000))
+  // await new Promise(r => setTimeout(r, 1000))
 
   return {
     "hello": "world"

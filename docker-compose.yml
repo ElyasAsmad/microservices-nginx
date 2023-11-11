@@ -1,0 +1,26 @@
+version: '1'
+
+services:
+  microservice1:
+    build: 
+      context: ./microservice1
+    networks:
+      - altigenius
+
+  microservice2:
+    build: 
+      context: ./microservice2
+    networks:
+      - altigenius
+
+  nginx-reverse-proxy:
+    build:
+      context: ./nginx-reverse-proxy
+    networks:
+      - altigenius
+    ports:
+      - "80:80"
+
+networks:
+  altigenius: 
+    driver: bridge

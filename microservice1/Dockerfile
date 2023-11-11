@@ -23,4 +23,4 @@ COPY --from=prerelease /usr/src/microservice1/package.json .
 
 USER bun
 EXPOSE 6161
-ENTRYPOINT [ "bun", "run", "src/index.ts" ]
+ENTRYPOINT [ "bun", "run", "index.ts" ]
